@@ -55,12 +55,12 @@ function initializeMap() {
                                  my_map_options);
     // this is an *array* that holds all the marker info
     var all_my_markers =
-            [{position: new google.maps.LatLng(41.9000,12.5000),
+            [{position: new google.maps.LatLng(43.655119, -79.377052),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
-              title: "first Marker",
-              window_content: "<h1>Marker1</h1><p> and this would be the extended description</p>"
+              title: "St. Michael’s Cathedral Basilica",
+              window_content: "<h1>Marker1</h1><p>Catholic, with 110 ratings</p>"
              },
              {position: new google.maps.LatLng(41.8902,12.4923),
               map: my_map,
@@ -116,7 +116,7 @@ function initializeMap() {
     fillColor: '#FF0000',
     fillOpacity: 0.35,
     // in general, we always have to *set the map* when we
-    // add features. 
+    // add features.
     map: my_map,
     bounds: {
       north: 42.685,
@@ -172,7 +172,7 @@ function toggleMarkers (marker_array, map) {
 
 
 // I added this for fun.  It allows you to trigger the infowindow
-// from outside the map.  
+// from outside the map.
 function locateMarker (marker) {
     console.log(marker);
     my_map.panTo(marker.marker.position);
