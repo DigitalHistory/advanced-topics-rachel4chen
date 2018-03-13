@@ -18,29 +18,6 @@ var redURL = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
 var red_markers = [];
 var blue_markers = [];
 
-// this is for fun, if you want it.  With this powerful feature you can add arbitrary
-// data layers to your map.  It's cool. Learn more at:
-// https://developers.google.com/maps/documentation/javascript/datalayer#load_geojson
-var myGeoJSON= {
-  "type":"FeatureCollection",
-  "features":
-  [{"type":"Feature",
-    "properties":{myColor: 'red'},
-    "myColor" : "red",
-    "geometry":{"type":"Polygon",
-                "coordinates":[[[43.655119, -79.377052],[43.651273, -79.374370],
-                                [43.657482, -79.393621],[43.68939, -79.417419],
-                                [43.68939, -79.417419]]]}},
-   {"type":"Feature",
-    "properties":{myColor: 'green'},
-    "myColor" : "green",
-     "geometry":{"type":"Polygon",
-                 "coordinates":[[[43.666541, -79.388981],[43.646964, -79.384366],
-                                 [43.668832, -79.375514],[43.654133, -79.376655],
-                                 [43.655922, -79.362610]]]
-                }}]};
-
-
 /* a function that will run when the page loads.  It creates the map
  and the initial marker.  If you want to create more markers, do it here. */
 function initializeMap() {
