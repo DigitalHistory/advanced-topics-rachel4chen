@@ -47,7 +47,7 @@ function initializeMap() {
     my_map_options = {
         center:  my_center, // to change this value, change my_center above
         zoom: 13,  // higher is closer-up
-        mapTypeId: google.maps.MapTypeId.HYBRID // you can also use TERRAIN, STREETMAP, SATELLITE
+        mapTypeId: google.maps.MapTypeId.TERRAIN // you can also use TERRAIN, STREETMAP, SATELLITE
     };
 
     // this one line creates the actual map
@@ -57,22 +57,28 @@ function initializeMap() {
     var all_my_markers =
             [{position: new google.maps.LatLng(43.655119, -79.377052),
               map: my_map,
-              icon: blueURL, // this sets the image that represents the marker in the map to the one
+              icon: redURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
-              title: "St. Michael’s Cathedral Basilica",
-              window_content: "<h1>Marker1</h1><p>Catholic, with 110 ratings</p>"
+              title: "first Marker",
+              window_content: "<h5> St. Michael’s Cathedral Basilica</h1><p>Catholic, with 110 ratings</p>"
              },
-             {position: new google.maps.LatLng(41.8902,12.4923),
+             {position: new google.maps.LatLng(43.651273, -79.374370),
               map: my_map,
-              icon: blueURL, // this sets the image that represents the marker in the map
+              icon: redURL, // this sets the image that represents the marker in the map
               title: "second Marker",
-              window_content: "<h1>Marker2</h1><p> and <a href='http://something'>this would</a> be the extended description</p>"
-            },
-            {position: new google.maps.LatLng(41.8986,12.4768),
+              window_content: "<h5> The Cathedral Church of St. James</h1><p>Anglican, with 71 ratings <a href='http://something'>this would</a> </p>"
+             },
+             {position: new google.maps.LatLng(43.657482, -79.393621),
+              map: my_map,
+              icon: redURL, // this sets the image that represents the marker in the map
+              title: "third Marker",
+              window_content: "<h5> Holy Trinity Russian Orthodox Church </h1><p>Russian Orthodox, with 50 ratings <a href='http://something'>this would</a> </p>"
+             },
+            {position: new google.maps.LatLng(43.654133, -79.376655),
              map: my_map,
-             icon: redURL, // this sets the image that represents the marker in the map
-             title: "third Marker",
-             window_content: '<h1>Marker3</h1><img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
+             icon: blueURL, // this sets the image that represents the marker in the map
+             title: "last Marker",
+             window_content: '<h5> Metropolitan United Church </h1>United, with 30 ratings <img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
              '<blockquote>quote quote quote quote</blockquote>'
            }
             ];
