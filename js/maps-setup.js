@@ -55,8 +55,7 @@ function initializeMap() {
              map: my_map,
              icon: blueURL, // this sets the image that represents the marker in the map
              title: "last Marker",
-             window_content: '<h5> Metropolitan United Church </h1>United, with 30 ratings <img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
-             '<blockquote>quote quote quote quote</blockquote>'
+             window_content: "<h5> Metropolitan United Church </h1><p>United, with 30 ratings</p>"
            }
             ];
 
