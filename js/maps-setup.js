@@ -42,7 +42,7 @@ function initializeMap() {
              {position: new google.maps.LatLng(43.651273, -79.374370),
               map: my_map,
               icon: redURL, // this sets the image that represents the marker in the map
-              title: "second Marker",
+              title: "The Cathedral Church of St. James",
               window_content: "<h5> The Cathedral Church of St. James</h1><p>Anglican, with 71 ratings <a href='http://something'>this would</a> </p>"
              },
              {position: new google.maps.LatLng(43.657482, -79.393621),
@@ -71,7 +71,7 @@ function initializeMap() {
         // be careful not to introduce syntax errors though.
       legendHTML +=
         "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> " +
-          marker.window_content + "</div>";
+          marker.title + "</div>";
         marker.info = new google.maps.InfoWindow({content: marker.window_content});
         var listener = google.maps.event.addListener(marker, 'click', function() {
             // if you want to allow multiple info windows, uncomment the next line
