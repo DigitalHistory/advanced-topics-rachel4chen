@@ -37,55 +37,55 @@ function initializeMap() {
               icon: redURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
               title: "- St. Michael’s Cathedral Basilica",
-              window_content: "<h5> St. Michael’s Cathedral Basilica</h1><p>Catholic, with 110 ratings</p>"
+              window_content: "<h5> St. Michael’s Cathedral Basilica</h1><p>Built in 1846, with 110 ratings</p>"
              },
              {position: new google.maps.LatLng(43.651273, -79.374370),
               map: my_map,
               icon: redURL, // this sets the image that represents the marker in the map
               title: "- The Cathedral Church of St. James",
-              window_content: "<h5> The Cathedral Church of St. James</h1><p>Anglican, with 71 ratings <a href='http://something'>this would</a> </p>"
+              window_content: "<h5> The Cathedral Church of St. James</h1><p>Built in 1853, with 71 ratings <a href='http://something'>this would</a> </p>"
              },
              {position: new google.maps.LatLng(43.657482, -79.393621),
               map: my_map,
-              icon: redURL, // this sets the image that represents the marker in the map
+              icon: blueURL, // this sets the image that represents the marker in the map
               title: "- Holy Trinity Russian Orthodox Church",
-              window_content: "<h5> Holy Trinity Russian Orthodox Church </h1><p>Russian Orthodox, with 50 ratings <a href='http://something'>this would</a> </p>"
+              window_content: "<h5> Holy Trinity Russian Orthodox Church </h1><p>Built in 1967, with 50 ratings <a href='http://something'>this would</a> </p>"
              },
              {position: new google.maps.LatLng(43.655038, -79.391414),
               map: my_map,
-              icon: redURL, // this sets the image that represents the marker in the map
+              icon: blueURL, // this sets the image that represents the marker in the map
               title: "- St. Patrick’s Catholic Church",
-              window_content: "<h5> St. Patrick’s Catholic Church  </h1><p>Catholic, with 45 ratings </p>"
+              window_content: "<h5> St. Patrick’s Catholic Church  </h1><p>Built in 1908, with 45 ratings </p>"
              },
              {position: new google.maps.LatLng(43.68939, -79.417419),
               map: my_map,
               icon: blueURL, // this sets the image that represents the marker in the map
               title: "- Russian Orthodox Christ the Saviour Cathedral",
-              window_content: "<h5> Russian Orthodox Christ the Saviour Cathedral </h1><p>Russian Orthodox, with 38 ratings </p>"
+              window_content: "<h5> Russian Orthodox Christ the Saviour Cathedral </h1><p>Built in 1915, with 38 ratings </p>"
              },
              {position: new google.maps.LatLng(43.666541, -79.388981),
               map: my_map,
-              icon: blueURL, // this sets the image that represents the marker in the map
+              icon: redURL, // this sets the image that represents the marker in the map
               title: "- St. Basil’s Catholic Parish at the University of St. Michael’s College",
-              window_content: "<h5> St. Basil’s Catholic Parish at the University of St. Michael’s College </h1><p>Catholic, with 35 ratings </p>"
+              window_content: "<h5> St. Basil’s Catholic Parish at the University of St. Michael’s College </h1><p>Built in 1856, with 35 ratings </p>"
              },
              {position: new google.maps.LatLng(43.646964, -79.384366),
               map: my_map,
-              icon: blueURL, // this sets the image that represents the marker in the map
+              icon: redURL, // this sets the image that represents the marker in the map
               title: "- St. Andrew’s Church",
-              window_content: "<h5> St. Andrew’s Church </h1><p>Presbyterian, with 34 ratings </p>"
+              window_content: "<h5> St. Andrew’s Church </h1><p>Built in 1876, with 34 ratings </p>"
              },
              {position: new google.maps.LatLng(43.668832, -79.375514),
               map: my_map,
-              icon: blueURL, // this sets the image that represents the marker in the map
+              icon: redURL, // this sets the image that represents the marker in the map
               title: "- Our Lady of Lourdes ",
-              window_content: "<h5> Our Lady of Lourdes </h1><p>Catholic, with 31 ratings </p>"
+              window_content: "<h5> Our Lady of Lourdes </h1><p>Built in 1879, with 31 ratings </p>"
              },
             {position: new google.maps.LatLng(43.654133, -79.376655),
              map: my_map,
-             icon: blueURL, // this sets the image that represents the marker in the map
+             icon: redURL, // this sets the image that represents the marker in the map
              title: "- Metropolitan United Church",
-             window_content: "<h5> Metropolitan United Church </h1><p>United, with 30 ratings</p>"
+             window_content: "<h5> Metropolitan United Church </h1><p>Built in 1872, with 30 ratings</p>"
            }
             ];
 
