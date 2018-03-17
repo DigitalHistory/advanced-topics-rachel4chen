@@ -35,18 +35,18 @@ div#map_legend {
     background: #FFF8DC;
     border: 1px solid #000;
     padding: 5px 15px;
+    cursor:pointer;
 }
 
 /* if you want, you can make the text in the legend less ugly by adding
 extra css classes. Advisable! */
 div#map_legend h1, div#map_legend h3 {
     line-height: 1;
-
+    font-weight: bold;
 }
 
 // make it obvious that the legend text is clickable
 div.pointer {
-    cursor:pointer;
 }
 
 /*just for fun, we can style the buttons using classes
