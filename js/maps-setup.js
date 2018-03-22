@@ -36,27 +36,56 @@ function initializeMap() {
               map: my_map,
               icon: redURL, // this sets the image that represents the marker in the map to the one
                              // located at the URL which is given by the variable blueURL, see above
-              title: "first Marker",
-              window_content: "<h5> St. Michael’s Cathedral Basilica</h1><p>Catholic, with 110 ratings</p>"
+              title: "- St. Michael’s Cathedral Basilica",
+              window_content: "<h5> St. Michael’s Cathedral Basilica</h1><p>Built in 1846, with 110 ratings</p>"
              },
              {position: new google.maps.LatLng(43.651273, -79.374370),
               map: my_map,
               icon: redURL, // this sets the image that represents the marker in the map
-              title: "second Marker",
-              window_content: "<h5> The Cathedral Church of St. James</h1><p>Anglican, with 71 ratings <a href='http://something'>this would</a> </p>"
+              title: "- The Cathedral Church of St. James",
+              window_content: "<h5> The Cathedral Church of St. James</h1><p>Built in 1853, with 71 ratings <a href='http://something'>this would</a> </p>"
              },
              {position: new google.maps.LatLng(43.657482, -79.393621),
               map: my_map,
+              icon: blueURL, // this sets the image that represents the marker in the map
+              title: "- Holy Trinity Russian Orthodox Church",
+              window_content: "<h5> Holy Trinity Russian Orthodox Church </h1><p>Built in 1967, with 50 ratings <a href='http://something'>this would</a> </p>"
+             },
+             {position: new google.maps.LatLng(43.655038, -79.391414),
+              map: my_map,
+              icon: blueURL, // this sets the image that represents the marker in the map
+              title: "- St. Patrick’s Catholic Church",
+              window_content: "<h5> St. Patrick’s Catholic Church  </h1><p>Built in 1908, with 45 ratings </p>"
+             },
+             {position: new google.maps.LatLng(43.68939, -79.417419),
+              map: my_map,
+              icon: blueURL, // this sets the image that represents the marker in the map
+              title: "- Russian Orthodox Christ the Saviour Cathedral",
+              window_content: "<h5> Russian Orthodox Christ the Saviour Cathedral </h1><p>Built in 1915, with 38 ratings </p>"
+             },
+             {position: new google.maps.LatLng(43.666541, -79.388981),
+              map: my_map,
               icon: redURL, // this sets the image that represents the marker in the map
-              title: "third Marker",
-              window_content: "<h5> Holy Trinity Russian Orthodox Church </h1><p>Russian Orthodox, with 50 ratings <a href='http://something'>this would</a> </p>"
+              title: "- St. Basil’s Catholic Parish at the University of St. Michael’s College",
+              window_content: "<h5> St. Basil’s Catholic Parish at the University of St. Michael’s College </h1><p>Built in 1856, with 35 ratings </p>"
+             },
+             {position: new google.maps.LatLng(43.646964, -79.384366),
+              map: my_map,
+              icon: redURL, // this sets the image that represents the marker in the map
+              title: "- St. Andrew’s Church",
+              window_content: "<h5> St. Andrew’s Church </h1><p>Built in 1876, with 34 ratings </p>"
+             },
+             {position: new google.maps.LatLng(43.668832, -79.375514),
+              map: my_map,
+              icon: redURL, // this sets the image that represents the marker in the map
+              title: "- Our Lady of Lourdes ",
+              window_content: "<h5> Our Lady of Lourdes </h1><p>Built in 1879, with 31 ratings </p>"
              },
             {position: new google.maps.LatLng(43.654133, -79.376655),
              map: my_map,
-             icon: blueURL, // this sets the image that represents the marker in the map
-             title: "last Marker",
-             window_content: '<h5> Metropolitan United Church </h1>United, with 30 ratings <img title="Picture of Quote. Src: someone, some year"  src="https://s-media-cache-ak0.pinimg.com/736x/6d/e2/25/6de2251b8b4be709dcc936ae4f0caaaf.jpg"/>' +
-             '<blockquote>quote quote quote quote</blockquote>'
+             icon: redURL, // this sets the image that represents the marker in the map
+             title: "- Metropolitan United Church",
+             window_content: "<h5> Metropolitan United Church </h1><p>Built in 1872, with 30 ratings</p>"
            }
             ];
 
@@ -72,7 +101,7 @@ function initializeMap() {
         // be careful not to introduce syntax errors though.
       legendHTML +=
         "<div class=\"pointer\" onclick=\"locateMarker(my_markers[" + j + "])\"> " +
-          marker.window_content + "</div>";
+          marker.title + "</div>";
         marker.info = new google.maps.InfoWindow({content: marker.window_content});
         var listener = google.maps.event.addListener(marker, 'click', function() {
             // if you want to allow multiple info windows, uncomment the next line
